@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PH Tube | Golam Faruk</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css custom style  -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="body-container w-11/12 mx-auto pt:8 lg:pt-12"> 
+        <header> 
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    
+                  </div>
+                  <div class=" pl-12 md:pl-40 lg:pl-0"> 
+                   <a href="./index.html"> <img src="./img/Logo.png" alt=""> </a>
+                  </div>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  
+                </div>
+                <div class="navbar-end">
+                  <a href="./index.html" class="btn btn-blog normal-case">Home</a>
+                </div>
+              </div>
+        </header>
+        <!-- Main Content Body Start  -->
+        <main > 
+          <hr>
+            <section class=" w-10/12 mx-auto pt-5"> 
+              <div class="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-4">
+                <div class=""> 
+                  <h2 class="text-3xl font-bold"> Java Script Scopes:</h2>
+                  <ol class="text-2xl ">
+                    <li class="py-2">1. Global scope</li>
+                    <li>2. Local scope: Two types
+                      <ul class="px-2">
+                        <li class="py-2">Block scope( Let, Const )</li>
+                        <li >Function scope( Var )</li>
+                      </ul>
+                    </li>
+                  </ol>
+                </div>
+               
+                <img src="./img/scope.png" alt="">
+                
+              </div>
+              <div> 
+                <h2 class="text-5xl font-bold pb-3"> New i discuss about Var,Let and Const Scope </h2>
+                <hr>
+                <div class="pt-3">
+                  <h2 class="text-3xl font-bold">Var Scope:</h2>
+                <p class="text-xl py-2">Var is a JavaScript Variable declaration "keyword". It declarations are globally scoped or function scoped.<br> When var is declared outside function is called Global scope and this variable can be accessed anywhere in the program.<br> When var is declared inside function is called function scope and it's variable can be accessed in function. Var variables can be updated and re-declared within its scope;  </p>
+                </div>
+                <div>
+                  <h2 class="text-3xl font-bold">Let Scope:</h2>
+                <p class="text-xl py-2">The scope of a let variable is block scope.It's declared in the '{}' and accessed only inside this block. let variables can be updated but not re-declared;</p>
+                </div>
+                <div>
+                  <h2 class="text-3xl font-bold">Const Scope:</h2>
+                <p class="text-xl py-2"> The scope of a const variable is block scope. It's declared in the '{}' and accessed only inside this block. const variables can neither be updated nor re-declared.</p>
+                </div>
+                <img class="pt-5" src="./img/scope1.webp" alt="">
+              </div>
+
+              <div class="grid grid-cols-1 lg:grid-cols-2 justify-between items-center gap-4 pt-10">
+              <div> 
+                <h2 class="text-5xl font-bold pb-5 "> The use cases of null and undefined</h2>
+                <hr>
+
+                <div> 
+                  <h2 class="text-2xl font-bold pt-5"> Undefined</h2>
+                  <p class="text-xl py-2"> Undefined is a special value in JavaScript that represents the absence of a value or the initial absence of a variable or property. It has several use cases in JavaScript <br> 
+                  <br> <span class="font-semibold text-2xl pt-2 ">Variable diclaretion:</span> When you declare a variable in your program ether global or local but don't assign a value to variable, it's automatically initialized to undefined.<br> <span class="font-semibold text-2xl pt-2">Function Arguments:</span> If you write a function is called with fewer arguments than it expects, the missing arguments are automatically set to undefined.
+                 <br> <span class="font-semibold text-2xl pt-2"> Object Properties:</span> 
+                 When you access an object property doesn't exists on an object will give you undefined.
+                 <br> <span class="font-semibold text-2xl pt-2"> Accessing array:</span>
+                 accessing array elements outside of the index rang will give you undefined
+                </p>
+                </div>
+                <div> 
+                  <h2 class="text-2xl font-bold"> Null</h2>
+                  <p class="text-xl py-2"> Null means an empty value or a blank value. The typeof() operator returns the type as an object for a variable whose value is assigned as null. <br>
+                    <span class="font-semibold text-2xl pt-2"> Default Values of Null:</span>You want to use null as a default value for your function parameters</p>
+                    <br> <span class="font-semibold text-2xl pt-2"> Initialize as null:</span> When you set variable Initialize value as null, indicating no data yet</p>
+                </div>
+              </div>
+              <img class="" src="./img/null.webp" alt="">
+              </div>
+              
+              <div> 
+                <h2 class="text-5xl font-bold pt-10 "> REST API</h2>
+                <hr>
+                <div>
+                  <p class="text-xl py-2"> An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other. A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style.</p>
+                </div>
+                <div> 
+                  <h2 class="text-2xl font-bold"> how it works?</h2>
+                  <p class="text-xl py-2"> A RESTful API is an architectural style for an application program interface (API) that uses HTTP requests to access and use data. That data can be used to GET, PUT, POST and DELETE data types, which refers to the reading, updating, creating and deleting of operations concerning resources.</p>
+                </div>
+              </div>
+            </div>
+
+
+
+            </section>
+            
+        </main>
+        <!-- Footer Section Star  -->
+        <footer> 
+         
+        </footer>
+    </div>
+    <script src="./function.js"></script>
+</body>
+</html>

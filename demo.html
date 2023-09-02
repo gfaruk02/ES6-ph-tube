@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Your head content remains the same -->
+</head>
+<body>
+    <!-- Your HTML body content remains the same -->
+
+    <script src="./function.js"></script>
+    <!-- <script src="./demo.js"></script> -->
+    <script>
+        const loadPhtube = async () => {
+            // Your existing code for loading data
+        }
+
+        const displaySort = (news) => {
+            const newsContainer = document.getElementById('news-container');
+            // Clear the existing cards
+            newsContainer.innerHTML = "";
+
+            // Sort the data by views in descending order
+            news.sort((a, b) => b.others.views - a.others.views);
+
+            news.forEach((newsItem) => {
+                // Create and append card elements for each sorted news item
+                const minute = Math.floor(newsItem.others.posted_date / 60);
+                const hours = Math.floor(minute / 60);
+                const minutes = Math.floor(minute - (hours * 60));
+
+                const div = document.createElement('div');
+                div.innerHTML = `
+                    <!-- Your card HTML structure here, similar to what you had -->
+                `;
+                newsContainer.appendChild(div);
+            });
+        }
+
+        const displyPhtube = async (id) => {
+            // Your existing code for displaying data
+        }
+
+        // Initial data loading and sorting
+        loadPhtube();
+        displyPhtube(1000);
+    </script>
+</body>
+</html>
